@@ -42,6 +42,9 @@ nvim_tree.setup {
         },
       },
     },
+    indent_markers = {
+      enable = true,
+    },
   },
   diagnostics = {
     enable = true,
@@ -54,7 +57,7 @@ nvim_tree.setup {
     },
   },
   view = {
-    width = 30,
+    width = 50,
     side = "left",
     mappings = {
       list = {
@@ -64,4 +67,6 @@ nvim_tree.setup {
       },
     },
   },
+  -- auto_close = true, -- has ben deprecated TODO: find how to close the tree on the last buffer
+  open_on_tab = true, -- don't know what this does
 }
